@@ -12,10 +12,10 @@ Cutomer receives 2 points for every dollar spent over $100 in each transaction, 
 e.g $120 purchase =  2*20 + 1*50 = 90 points
 
 ## Project Structure
-/public contains the dummy data 
-/src/common contains components which can used all over the application
-/src/components contains main components of the application
-/src/services  includes api calls
+/public contains the dummy data__ 
+/src/common contains components which can used all over the application__
+/src/components contains main components of the application__
+/src/services  includes api calls__
 /src/utilites includes functions which were used reward and sum calculations
 
 
