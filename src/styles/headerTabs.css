@@ -1,6 +1,7 @@
 .tabs {
   display: flex;
   cursor: pointer;
+  justify-content: center;
 }
 .tab {
   padding: 10px 20px;

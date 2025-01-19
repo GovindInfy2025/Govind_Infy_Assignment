@@ -1,15 +1,15 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import { customerContext } from './LandingPage';
-import Table from '../common/Table';
-import SearchBar from '../common/SearchBar';
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { customerContext } from "./LandingPage";
+import Table from "../common/Table";
+import SearchBar from "../common/SearchBar";
 
 const CustomerTables = () => {
   const { activeTab, data, monthlyData, totalData } =
     useContext(customerContext);
 
   let tableData = [];
-  if (activeTab === 'cust_trn') tableData = data;
-  else if (activeTab === 'monthly_rew') tableData = monthlyData;
+  if (activeTab === "cust_trn") tableData = data;
+  else if (activeTab === "monthly_rew") tableData = monthlyData;
   else tableData = totalData;
 
   const [copyData, setCopyData] = useState(structuredClone(tableData));
