@@ -7,13 +7,8 @@ const Table = (props) => {
   const [currPage, setCurrPage] = useState(1);
   const recordsPerPage = 10;
   const totalPage = Math.ceil(tabData.length / recordsPerPage);
-  console.log("currPage",currPage)
   const start = (currPage - 1) * recordsPerPage;
   const end = recordsPerPage + start;
-  console.log("tabdata",tabData)
-  console.log("start",start)
-  console.log("end",end)
-  console.log("sliced",tabData.slice(start, end))
   const currentData = tabData.slice(start, end);
 
   const handlePagination = (pageNumber) => {

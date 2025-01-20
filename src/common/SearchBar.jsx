@@ -25,7 +25,6 @@ const SearchBar = (props) => {
         val.toString().toLowerCase().includes(searchStr.toLowerCase())
       )
     );
-    console.log("filtered",filtered)
     setCopyData(filtered);
   };
 
