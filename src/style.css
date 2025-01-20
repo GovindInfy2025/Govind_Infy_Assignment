@@ -4,7 +4,7 @@ p {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 input[type='search'] {
-  width: 320px;
+  width: 250px;
   height: 30px;
   border-radius: 4px;
   margin: 5px;

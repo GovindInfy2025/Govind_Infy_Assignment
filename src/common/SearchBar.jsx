@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { act, useEffect, useState } from "react";
 
 const SearchBar = (props) => {
   const { setCopyData, orgData, activeTab } = props;
   const [searchStr, setSearchStr] = useState("");
+
+  var placeHolder = "";
+  if (activeTab == "cust_trn") placeHolder = "by Customer's Name or Id ...";
+  else placeHolder = "in all fields...";
 
   useEffect(() => {
     const debounceTime = setTimeout(() => {
@@ -31,7 +35,7 @@ const SearchBar = (props) => {
   return (
     <input
       type="search"
-      placeholder="Search by Customer's Name, Id or Purshase Date"
+      placeholder={"Search "+placeHolder}
       value={searchStr}
       onChange={(e) => setSearchStr(e.target.value)}
     />
