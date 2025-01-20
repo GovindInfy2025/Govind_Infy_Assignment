@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const SearchBar = (props) => {
   const { setCopyData, orgData, activeTab } = props;
-  const [searchStr, setSearchStr] = useState('');
+  const [searchStr, setSearchStr] = useState("");
 
   useEffect(() => {
     const debounceTime = setTimeout(() => {
@@ -12,11 +12,11 @@ const SearchBar = (props) => {
   }, [searchStr]);
 
   useEffect(() => {
-    setSearchStr('');
+    setSearchStr("");
   }, [activeTab]);
 
   const handleSearch = () => {
-    if (searchStr === '') {
+    if (searchStr === "") {
       setCopyData(orgData);
       return;
     }
@@ -25,13 +25,14 @@ const SearchBar = (props) => {
         val.toString().toLowerCase().includes(searchStr.toLowerCase())
       )
     );
+    console.log("filtered",filtered)
     setCopyData(filtered);
   };
 
   return (
     <input
       type="search"
-      placeholder="Search...."
+      placeholder="Search by Customer's Name, Id or Purshase Date"
       value={searchStr}
       onChange={(e) => setSearchStr(e.target.value)}
     />

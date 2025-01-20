@@ -1,42 +1,324 @@
 [
-  {"transaction_id": "A1B2C3", "customer_id": 101, "customer_name": "John Doe", "purchase_date": "2025-01-19", "price": 150.75},
-  {"transaction_id": "D4E5F6", "customer_id": 102, "customer_name": "Jane Smith", "purchase_date": "2025-01-19", "price": 220.50},
-  {"transaction_id": "G7H8I9", "customer_id": 103, "customer_name": "Alice Johnson", "purchase_date": "2025-01-18", "price": 99.99},
-  {"transaction_id": "J0K1L2", "customer_id": 101, "customer_name": "John Doe", "purchase_date": "2025-01-18", "price": 45.20},
-  {"transaction_id": "M3N4O5", "customer_id": 104, "customer_name": "Carol White", "purchase_date": "2024-12-17", "price": 300.00},
-  {"transaction_id": "P6Q7R8", "customer_id": 105, "customer_name": "David Brown", "purchase_date": "2024-12-16", "price": 120.40},
-  {"transaction_id": "S9T0U1", "customer_id": 106, "customer_name": "Emma Green", "purchase_date": "2024-11-15", "price": 189.75},
-  {"transaction_id": "V2W3X4", "customer_id": 107, "customer_name": "Frank Black", "purchase_date": "2024-11-14", "price": 50.60},
-  {"transaction_id": "Y5Z6A7", "customer_id": 103, "customer_name": "Alice Johnson", "purchase_date": "2024-10-14", "price": 250.30},
-  {"transaction_id": "B8C9D0", "customer_id": 108, "customer_name": "Harry White", "purchase_date": "2024-09-13", "price": 75.10},
-  {"transaction_id": "E1F2G3", "customer_id": 109, "customer_name": "Ivy Hall", "purchase_date": "2024-09-12", "price": 350.00},
-  {"transaction_id": "H4I5J6", "customer_id": 110, "customer_name": "Jack King", "purchase_date": "2024-08-12", "price": 95.90},
-  {"transaction_id": "K7L8M9", "customer_id": 111, "customer_name": "Karen Scott", "purchase_date": "2024-07-11", "price": 200.00},
-  {"transaction_id": "N0O1P2", "customer_id": 102, "customer_name": "Jane Smith", "purchase_date": "2024-07-10", "price": 130.40},
-  {"transaction_id": "Q3R4S5", "customer_id": 105, "customer_name": "David Brown", "purchase_date": "2024-06-09", "price": 220.80},
-  {"transaction_id": "T6U7V8", "customer_id": 106, "customer_name": "Emma Green", "purchase_date": "2024-06-08", "price": 99.99},
-  {"transaction_id": "W9X0Y1", "customer_id": 109, "customer_name": "Ivy Hall", "purchase_date": "2024-05-07", "price": 270.60},
-  {"transaction_id": "Z2A3B4", "customer_id": 110, "customer_name": "Peter Lewis", "purchase_date": "2024-05-06", "price": 180.20},
-  {"transaction_id": "C5D6E7", "customer_id": 111, "customer_name": "Quinn Taylor", "purchase_date": "2024-05-05", "price": 49.75},
-  {"transaction_id": "F8G9H0", "customer_id": 102, "customer_name": "Jane Smith", "purchase_date": "2024-04-04", "price": 125.30},
-  {"transaction_id": "I1J2K3", "customer_id": 104, "customer_name": "Steve King", "purchase_date": "2024-04-03", "price": 150.90},
-  {"transaction_id": "L4M5N6", "customer_id": 105, "customer_name": "Tanya King", "purchase_date": "2024-03-02", "price": 98.40},
-  {"transaction_id": "O7P8Q9", "customer_id": 103, "customer_name": "Ursula Green", "purchase_date": "2024-03-01", "price": 220.10},
-  {"transaction_id": "R0S1T2", "customer_id": 106, "customer_name": "Victor Harris", "purchase_date": "2024-02-28", "price": 180.90},
-  {"transaction_id": "U3V4W5", "customer_id": 107, "customer_name": "Wendy Robinson", "purchase_date": "2024-02-27", "price": 75.50},
-  {"transaction_id": "X6Y7Z8", "customer_id": 108, "customer_name": "Xander Clark", "purchase_date": "2024-01-26", "price": 250.40},
-  {"transaction_id": "A9B0C1", "customer_id": 103, "customer_name": "Yvonne Young", "purchase_date": "2024-01-25", "price": 90.10},
-  {"transaction_id": "D2E3F4", "customer_id": 109, "customer_name": "Zachary Moore", "purchase_date": "2024-01-24", "price": 300.00},
-  {"transaction_id": "G5H6I7", "customer_id": 110, "customer_name": "Angela White", "purchase_date": "2024-01-23", "price": 120.20},
-  {"transaction_id": "J8K9L0", "customer_id": 102, "customer_name": "Brian Black", "purchase_date": "2024-01-22", "price": 200.50},
-  {"transaction_id": "M1N2O3", "customer_id": 105, "customer_name": "Cynthia Adams", "purchase_date": "2024-01-21", "price": 140.75},
-  {"transaction_id": "P4Q5R6", "customer_id": 106, "customer_name": "Daniel Scott", "purchase_date": "2024-01-20", "price": 180.90},
-  {"transaction_id": "S7T8U9", "customer_id": 107, "customer_name": "Ellie Brown", "purchase_date": "2024-01-19", "price": 100.60},
-  {"transaction_id": "V0W1X2", "customer_id": 108, "customer_name": "Fiona Lee", "purchase_date": "2024-01-18", "price": 225.50},
-  {"transaction_id": "Y3Z4A5", "customer_id": 109, "customer_name": "George Taylor", "purchase_date": "2024-01-17", "price": 300.10},
-  {"transaction_id": "B6C7D8", "customer_id": 110, "customer_name": "Hannah Smith", "purchase_date": "2024-01-16", "price": 115.75},
-  {"transaction_id": "E9F0G1", "customer_id": 101, "customer_name": "Isaac White", "purchase_date": "2024-01-15", "price": 89.90},
-  {"transaction_id": "H2I3J4", "customer_id": 102, "customer_name": "Julia Green", "purchase_date": "2024-01-14", "price": 140.40},
-  {"transaction_id": "K5L6M7", "customer_id": 103, "customer_name": "Kevin Brown", "purchase_date": "2024-01-13", "price": 180.00},
-  {"transaction_id": "N8O9P0", "customer_id": 104, "customer_name": "Laura Clark", "purchase_date": "2024-01-12", "price": 250.80}
+  {
+    "transaction_id": "T001",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-10-05",
+    "price": 120.50
+  },
+  {
+    "transaction_id": "T002",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2024-10-12",
+    "price": 89.99
+  },
+  {
+    "transaction_id": "T003",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2024-10-20",
+    "price": 75.30
+  },
+  {
+    "transaction_id": "T004",
+    "customer_id": "C004",
+    "customer_name": "David Martinez",
+    "purchase_date": "2024-11-01",
+    "price": 250.00
+  },
+  {
+    "transaction_id": "T005",
+    "customer_id": "C005",
+    "customer_name": "Eve Williams",
+    "purchase_date": "2024-11-04",
+    "price": 55.45
+  },
+  {
+    "transaction_id": "T006",
+    "customer_id": "C006",
+    "customer_name": "Frank Taylor",
+    "purchase_date": "2024-11-10",
+    "price": 99.99
+  },
+  {
+    "transaction_id": "T007",
+    "customer_id": "C007",
+    "customer_name": "Grace Anderson",
+    "purchase_date": "2024-11-15",
+    "price": 180.20
+  },
+  {
+    "transaction_id": "T008",
+    "customer_id": "C008",
+    "customer_name": "Hannah Thomas",
+    "purchase_date": "2024-11-20",
+    "price": 140.60
+  },
+  {
+    "transaction_id": "T009",
+    "customer_id": "C009",
+    "customer_name": "Ivy Moore",
+    "purchase_date": "2024-12-05",
+    "price": 65.75
+  },
+  {
+    "transaction_id": "T010",
+    "customer_id": "C010",
+    "customer_name": "Jack Wilson",
+    "purchase_date": "2024-12-10",
+    "price": 200.00
+  },
+  {
+    "transaction_id": "T011",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-11-05",
+    "price": 110.00
+  },
+  {
+    "transaction_id": "T012",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2024-11-08",
+    "price": 58.30
+  },
+  {
+    "transaction_id": "T013",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2024-11-18",
+    "price": 145.80
+  },
+  {
+    "transaction_id": "T014",
+    "customer_id": "C004",
+    "customer_name": "David Martinez",
+    "purchase_date": "2024-12-01",
+    "price": 320.00
+  },
+  {
+    "transaction_id": "T015",
+    "customer_id": "C005",
+    "customer_name": "Eve Williams",
+    "purchase_date": "2024-11-25",
+    "price": 210.30
+  },
+  {
+    "transaction_id": "T016",
+    "customer_id": "C006",
+    "customer_name": "Frank Taylor",
+    "purchase_date": "2024-12-02",
+    "price": 70.10
+  },
+  {
+    "transaction_id": "T017",
+    "customer_id": "C007",
+    "customer_name": "Grace Anderson",
+    "purchase_date": "2024-12-03",
+    "price": 60.40
+  },
+  {
+    "transaction_id": "T018",
+    "customer_id": "C008",
+    "customer_name": "Hannah Thomas",
+    "purchase_date": "2024-12-05",
+    "price": 140.00
+  },
+  {
+    "transaction_id": "T019",
+    "customer_id": "C009",
+    "customer_name": "Ivy Moore",
+    "purchase_date": "2024-10-09",
+    "price": 175.00
+  },
+  {
+    "transaction_id": "T020",
+    "customer_id": "C010",
+    "customer_name": "Jack Wilson",
+    "purchase_date": "2024-11-28",
+    "price": 98.50
+  },
+  {
+    "transaction_id": "T021",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-12-12",
+    "price": 160.60
+  },
+  {
+    "transaction_id": "T022",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2024-12-14",
+    "price": 75.90
+  },
+  {
+    "transaction_id": "T023",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2024-12-15",
+    "price": 99.99
+  },
+  {
+    "transaction_id": "T024",
+    "customer_id": "C004",
+    "customer_name": "David Martinez",
+    "purchase_date": "2024-10-02",
+    "price": 220.30
+  },
+  {
+    "transaction_id": "T025",
+    "customer_id": "C005",
+    "customer_name": "Eve Williams",
+    "purchase_date": "2024-12-17",
+    "price": 40.00
+  },
+  {
+    "transaction_id": "T026",
+    "customer_id": "C006",
+    "customer_name": "Frank Taylor",
+    "purchase_date": "2024-12-20",
+    "price": 90.60
+  },
+  {
+    "transaction_id": "T027",
+    "customer_id": "C007",
+    "customer_name": "Grace Anderson",
+    "purchase_date": "2024-12-22",
+    "price": 180.00
+  },
+  {
+    "transaction_id": "T028",
+    "customer_id": "C008",
+    "customer_name": "Hannah Thomas",
+    "purchase_date": "2024-10-30",
+    "price": 130.40
+  },
+  {
+    "transaction_id": "T029",
+    "customer_id": "C009",
+    "customer_name": "Ivy Moore",
+    "purchase_date": "2024-11-08",
+    "price": 160.00
+  },
+  {
+    "transaction_id": "T030",
+    "customer_id": "C010",
+    "customer_name": "Jack Wilson",
+    "purchase_date": "2024-11-18",
+    "price": 300.50
+  },
+  {
+    "transaction_id": "T031",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-12-14",
+    "price": 135.00
+  },
+  {
+    "transaction_id": "T032",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2024-12-25",
+    "price": 220.10
+  },
+  {
+    "transaction_id": "T033",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2024-10-11",
+    "price": 48.60
+  },
+  {
+    "transaction_id": "T034",
+    "customer_id": "C004",
+    "customer_name": "David Martinez",
+    "purchase_date": "2024-11-20",
+    "price": 170.20
+  },
+  {
+    "transaction_id": "T035",
+    "customer_id": "C005",
+    "customer_name": "Eve Williams",
+    "purchase_date": "2024-10-25",
+    "price": 250.00
+  },
+  {
+    "transaction_id": "T036",
+    "customer_id": "C006",
+    "customer_name": "Frank Taylor",
+    "purchase_date": "2024-12-07",
+    "price": 85.90
+  },
+  {
+    "transaction_id": "T037",
+    "customer_id": "C007",
+    "customer_name": "Grace Anderson",
+    "purchase_date": "2024-10-18",
+    "price": 220.50
+  },
+  {
+    "transaction_id": "T038",
+    "customer_id": "C008",
+    "customer_name": "Hannah Thomas",
+    "purchase_date": "2024-11-28",
+    "price": 115.70
+  },
+  {
+    "transaction_id": "T039",
+    "customer_id": "C009",
+    "customer_name": "Ivy Moore",
+    "purchase_date": "2024-11-30",
+    "price": 190.00
+  },
+  {
+    "transaction_id": "T040",
+    "customer_id": "C010",
+    "customer_name": "Jack Wilson",
+    "purchase_date": "2024-10-07",
+    "price": 120.50
+  },
+  {
+    "transaction_id": "T041",
+    "customer_id": "C010",
+    "customer_name": "Jack Wilson",
+    "purchase_date": "2025-01-06",
+    "price": 129.50
+  },
+  {
+    "transaction_id": "T042",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2025-01-05",
+    "price": 110.50
+  },
+  {
+    "transaction_id": "T045",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-09-05",
+    "price": 108
+  },
+  {
+    "transaction_id": "T043",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2025-01-12",
+    "price": 189.99
+  },
+  {
+    "transaction_id": "T046",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2024-09-12",
+    "price": 89.99
+  },
+  {
+    "transaction_id": "T044",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2025-01-20",
+    "price": 175.30
+  }
 ]

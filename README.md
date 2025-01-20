@@ -22,7 +22,15 @@ e.g $120 purchase =  2*20 + 1*50 = 90 points
 ## Installation and run project locally 
 1. Clone the repository
 2. Install dependencies by using
-     npm install
+    - npm install
 3. Run the project by using
-    npm start
+    - npm start
+
+## Unit Testing
+1. Use npm run test
+2. Test cases covered for the api call
+   - Loading is visible or not
+   - When api fails
+   - After data is fetched
+   - Data is sorted by date or not 
 

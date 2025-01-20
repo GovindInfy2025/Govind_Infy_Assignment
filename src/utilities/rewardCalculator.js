@@ -7,7 +7,7 @@ const rewardCalculator = (data) => {
       price = 100;
     }
     if (price >= 50 && price <= 100) points = points + 1 * (price - 50);
-    cust['Rewards'] = points;
+    cust["Rewards"] = points;
   });
   return data;
 };

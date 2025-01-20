@@ -3,7 +3,8 @@
   border-collapse: collapse;
   margin-top: 10px;
   text-align: center;
-  height: 74vh;
+  height: auto;
+  margin-right: 5px;
 }
 
 .cust_table th,
@@ -15,4 +16,12 @@
 .cust_table th {
   background-color: #f4f4f4;
   cursor: pointer;
+}
+
+.pagination{
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+.pagBtn:last-child{
+  margin-right: 0px !important;
 }

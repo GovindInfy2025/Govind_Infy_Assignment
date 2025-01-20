@@ -3,7 +3,7 @@ export const monthlyCalculator = (data) => {
     const month = new Date(obj.purchase_date).getMonth() + 1;
     const year = new Date(obj.purchase_date).getFullYear();
     let key =
-      obj.customer_id + '-' + obj.customer_name + '-' + month + '-' + year;
+      obj.customer_id + "-" + obj.customer_name + "-" + month + "-" + year;
     if (!acc[key]) {
       acc[key] = 0;
     }
@@ -11,28 +11,28 @@ export const monthlyCalculator = (data) => {
     return acc;
   }, {});
   let monthArr = [];
-  const col = ['customer_id', 'customer_name', 'Month', 'Year'];
+  const col = ["customer_id", "customer_name", "Month", "Year"];
   const months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   let index = 0;
   let monthObj = {};
   for (const item in grpData) {
-    let val = item.split('-');
+    let val = item.split("-");
     val.map((k, i) => (monthObj = { ...monthObj, [col[i]]: val[i] }));
-    monthObj['Monthly Rewards'] = grpData[item];
-    monthObj['Month'] = months[monthObj['Month'] - 1];
+    monthObj["Monthly Rewards"] = grpData[item];
+    monthObj["Month"] = months[monthObj["Month"] - 1];
     index += 1;
     monthArr.push(monthObj);
   }
@@ -45,14 +45,17 @@ export const totalRewardCal = (data) => {
     if (!acc[key]) {
       acc[key] = 0;
     }
-    // To consider only last 3 months records 
-    if(new Date(obj.purchase_date)>=new Date(new Date().setMonth(new Date().getMonth()-3)))
-    acc[key] += obj.Rewards;
+    // To consider only last 3 months records
+    if (
+      new Date(obj.purchase_date) >=
+      new Date(new Date().setMonth(new Date().getMonth() - 3))
+    )
+      acc[key] += obj.Rewards;
     return acc;
   }, {});
   let totalArr = [];
   for (const item in grpData) {
-    totalArr.push({ 'Customer Name': item, 'Total Rewards': grpData[item] });
+    totalArr.push({ "Customer Name": item, "Total Rewards": grpData[item] });
   }
   return totalArr;
 };

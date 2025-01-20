@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 const Loader = () => {
   return <p className="loader">Please wait while we fetch the records</p>;
 };

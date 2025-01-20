@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { customerContext } from "./LandingPage";
+import { customerContext } from "../pages/LandingPage";
 import Table from "../common/Table";
 import SearchBar from "../common/SearchBar";
 

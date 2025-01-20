@@ -4,11 +4,12 @@ p {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 input[type='search'] {
-  width: 200px;
+  width: 320px;
   height: 30px;
   border-radius: 4px;
   margin: 5px;
   float: right;
+  margin-right: 0px;
 }
 
 .loader {
