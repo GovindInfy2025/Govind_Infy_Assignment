@@ -27,7 +27,7 @@ test("Test Headers and data after data is fetched", async () => {
           transaction_id: "A1B2C3",
           customer_id: 101,
           customer_name: "John Doe",
-          purchase_date: "2025-01-19",
+          purchase_date: "2024-12-01",
           price: 150.75,
         },
         {
