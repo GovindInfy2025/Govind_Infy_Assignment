@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Landingpage from "./Landingpage";
+import Landingpage from "../../pages/LandingPage";
 
 global.fetch = jest.fn();
 global.structuredClone = (val) => JSON.parse(JSON.stringify(val));
@@ -19,24 +19,26 @@ test("Display Loading state initially", () => {
 });
 
 test("Test Headers and data after data is fetched", async () => {
-  const mockCusts = [
-    {
-      transaction_id: "A1B2C3",
-      customer_id: 101,
-      customer_name: "John Doe",
-      purchase_date: "2025-01-19",
-      price: 150.75,
-    },
-    {
-      transaction_id: "D4E5F6",
-      customer_id: 102,
-      customer_name: "Jane Smith",
-      purchase_date: "2025-01-19",
-      price: 220.5,
-    },
-  ];
   fetch.mockResolvedValueOnce({
-    json: jest.fn().mockResolvedValue(mockCusts),
+    ok: true,
+    json: async () => {
+      [
+        {
+          transaction_id: "A1B2C3",
+          customer_id: 101,
+          customer_name: "John Doe",
+          purchase_date: "2025-01-19",
+          price: 150.75,
+        },
+        {
+          transaction_id: "D4E5F6",
+          customer_id: 102,
+          customer_name: "Jane Smith",
+          purchase_date: "2025-01-19",
+          price: 220.5,
+        },
+      ];
+    }
   });
   render(<Landingpage />);
   await waitFor(() =>
@@ -50,7 +52,7 @@ test("Test Headers and data after data is fetched", async () => {
 });
 
 test("Handle API failure", async () => {
-  fetch, mockResolvedValueOnce(new Error("Failed to fetch records"));
+  fetch.mockResolvedValueOnce(new Error("Failed to fetch records"));
   render(<Landingpage />);
   await waitFor(() =>
     expect(
