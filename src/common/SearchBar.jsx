@@ -1,4 +1,4 @@
-import React, { act, useEffect, useState } from "react";
+import React, { act, useEffect, useState,memo } from "react";
 
 const SearchBar = (props) => {
   const { setCopyData, orgData, activeTab } = props;
@@ -37,8 +37,8 @@ const SearchBar = (props) => {
       type="search"
       placeholder={"Search "+placeHolder}
       value={searchStr}
-      onChange={(e) => setSearchStr(e.target.value)}
+      onChange={(e) => setSearchStr(e.target.value.trim())}
     />
   );
 };
-export default SearchBar;
+export default memo(SearchBar);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 import "../styles/table.css";
 import Loader from "./Loader";
 
@@ -79,4 +79,4 @@ const Table = (props) => {
     </>
   );
 };
-export default Table;
+export default memo(Table);

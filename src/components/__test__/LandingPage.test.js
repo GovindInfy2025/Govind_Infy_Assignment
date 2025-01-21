@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Landingpage from "../../pages/LandingPage";
+import LandingPage from "../../pages/LandingPage";
 
 global.fetch = jest.fn();
 global.structuredClone = (val) => JSON.parse(JSON.stringify(val));
@@ -13,7 +13,7 @@ test("Display Loading state initially", () => {
   fetch.mockResolvedValueOnce({
     json: jest.fn().mockResolvedValue([]),
   });
-  render(<Landingpage />);
+  render(<LandingPage />);
   const loader = screen.getByText("Please wait while we fetch the records");
   expect(loader).toBeInTheDocument();
 });
@@ -40,7 +40,7 @@ test("Test Headers and data after data is fetched", async () => {
       ];
     }
   });
-  render(<Landingpage />);
+  render(<LandingPage />);
   await waitFor(() =>
     expect(screen.getByText(/John Doe/i)).toBeInTheDocument()
   );
@@ -53,7 +53,7 @@ test("Test Headers and data after data is fetched", async () => {
 
 test("Handle API failure", async () => {
   fetch.mockResolvedValueOnce(new Error("Failed to fetch records"));
-  render(<Landingpage />);
+  render(<LandingPage />);
   await waitFor(() =>
     expect(
       screen.queryByText("Please wait while we fetch the records")

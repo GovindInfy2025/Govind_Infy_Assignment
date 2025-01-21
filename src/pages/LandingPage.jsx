@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, useEffect, createContext,memo } from "react";
 import HeaderTabs from "../components/HeaderTabs";
 import CustomerTables from "../components/CustomerTables";
 import rewardCalcualtor from "../utilities/rewardCalculator";
@@ -64,4 +64,4 @@ const LandingPage = () => {
     </>
   );
 };
-export default LandingPage;
+export default memo(LandingPage);

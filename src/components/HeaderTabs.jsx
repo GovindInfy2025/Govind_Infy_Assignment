@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,memo } from "react";
 import { customerContext } from "../pages/LandingPage";
 import "../styles/headerTabs.css";
 const HeaderTabs = () => {
@@ -23,4 +23,4 @@ const HeaderTabs = () => {
     </div>
   );
 };
-export default HeaderTabs;
+export default memo(HeaderTabs);
