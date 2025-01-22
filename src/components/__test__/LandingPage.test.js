@@ -37,7 +37,7 @@ test("Test Headers and data after data is fetched", async () => {
   ];
   fetch.mockResolvedValueOnce({
     ok: true,
-    json: jest.fn().mockResolvedValue(mockCust)
+    json: jest.fn().mockResolvedValue({data:mockCust})
   });
   render(<LandingPage />);
   await waitFor(() =>

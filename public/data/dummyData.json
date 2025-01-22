@@ -1,4 +1,7 @@
-[
+{
+  "ok":true,
+  "data":
+  [
   {
     "transaction_id": "T001",
     "customer_id": "C001",
@@ -322,3 +325,4 @@
     "price": 175.30
   }
 ]
+}
