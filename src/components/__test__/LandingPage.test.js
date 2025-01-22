@@ -19,26 +19,25 @@ test("Display Loading state initially", () => {
 });
 
 test("Test Headers and data after data is fetched", async () => {
+  const mockCust = [
+    {
+      transaction_id: "A1B2C3",
+      customer_id: 101,
+      customer_name: "John Doe",
+      purchase_date: "2024-12-01",
+      price: 150.75,
+    },
+    {
+      transaction_id: "D4E5F6",
+      customer_id: 102,
+      customer_name: "Jane Smith",
+      purchase_date: "2025-01-19",
+      price: 220.5,
+    },
+  ];
   fetch.mockResolvedValueOnce({
     ok: true,
-    json: async () => {
-      [
-        {
-          transaction_id: "A1B2C3",
-          customer_id: 101,
-          customer_name: "John Doe",
-          purchase_date: "2024-12-01",
-          price: 150.75,
-        },
-        {
-          transaction_id: "D4E5F6",
-          customer_id: 102,
-          customer_name: "Jane Smith",
-          purchase_date: "2025-01-19",
-          price: 220.5,
-        },
-      ];
-    }
+    json: jest.fn().mockResolvedValue(mockCust)
   });
   render(<LandingPage />);
   await waitFor(() =>
