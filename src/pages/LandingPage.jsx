@@ -4,7 +4,7 @@ import CustomerTables from "../components/CustomerTables";
 import rewardCalcualtor from "../utilities/rewardCalculator";
 import { monthlyCalculator, totalRewardCal } from "../utilities/sumCalculator";
 import Loader from "../common/Loader";
-import { fetchCustomerData } from "../services/customerApi";
+import { fetchCustomerData } from "../utilities/services/customerApi";
 
 export const customerContext = createContext();
 

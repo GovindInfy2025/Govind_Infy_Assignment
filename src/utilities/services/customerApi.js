@@ -1,4 +1,4 @@
-import Logger from "../utilities/logger";
+import Logger from "../logger";
 export const fetchCustomerData = async () => {
   try {
     const response = await fetch("/data/dummyData.json");
