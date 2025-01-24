@@ -1,5 +1,5 @@
 const rewardCalculator = (data) => {
-  data.forEach((cust) => {
+  const rewardData = data.map((cust) => {
     let points = 0;
     let price = Math.round(cust.price);
     if (price > 100) {
@@ -7,8 +7,11 @@ const rewardCalculator = (data) => {
       price = 100;
     }
     if (price >= 50 && price <= 100) points = points + 1 * (price - 50);
-    cust["Rewards"] = points;
+    return ({
+      ...cust,
+      Rewards: points
+    })
   });
-  return data;
+  return rewardData;
 };
 export default rewardCalculator;

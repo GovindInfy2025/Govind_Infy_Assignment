@@ -297,18 +297,25 @@
     "price": 110.50
   },
   {
-    "transaction_id": "T045",
-    "customer_id": "C001",
-    "customer_name": "Alice Johnson",
-    "purchase_date": "2024-09-05",
-    "price": 108
-  },
-  {
     "transaction_id": "T043",
     "customer_id": "C002",
     "customer_name": "Bob Smith",
     "purchase_date": "2025-01-12",
     "price": 189.99
+  },
+  {
+    "transaction_id": "T044",
+    "customer_id": "C003",
+    "customer_name": "Charlie Davis",
+    "purchase_date": "2025-01-20",
+    "price": 175.30
+  },
+  {
+    "transaction_id": "T045",
+    "customer_id": "C001",
+    "customer_name": "Alice Johnson",
+    "purchase_date": "2024-09-05",
+    "price": 108
   },
   {
     "transaction_id": "T046",
@@ -318,11 +325,18 @@
     "price": 89.99
   },
   {
-    "transaction_id": "T044",
+    "transaction_id": "T047",
     "customer_id": "C003",
     "customer_name": "Charlie Davis",
-    "purchase_date": "2025-01-20",
-    "price": 175.30
+    "purchase_date": "2025-01-22",
+    "price": 75
+  },
+  {
+    "transaction_id": "T048",
+    "customer_id": "C002",
+    "customer_name": "Bob Smith",
+    "purchase_date": "2025-01-23",
+    "price": 120
   }
 ]
 }
