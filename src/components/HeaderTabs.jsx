@@ -1,4 +1,4 @@
-import React, { useContext,memo } from "react";
+import React, { useContext, memo } from "react";
 import { customerContext } from "../pages/LandingPage";
 import "../styles/headerTabs.css";
 const HeaderTabs = () => {

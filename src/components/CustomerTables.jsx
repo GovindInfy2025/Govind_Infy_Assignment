@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState,memo } from "react";
+import React, { useContext, useEffect, useRef, useState, memo } from "react";
 import { customerContext } from "../pages/LandingPage";
 import Table from "../common/Table";
 import SearchBar from "../common/SearchBar";

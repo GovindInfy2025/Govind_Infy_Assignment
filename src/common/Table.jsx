@@ -1,4 +1,4 @@
-import React, { useEffect, useState,memo } from "react";
+import React, { useEffect, useState, memo } from "react";
 import "../styles/table.css";
 import Loader from "./Loader";
 
@@ -15,9 +15,9 @@ const Table = (props) => {
     setCurrPage(pageNumber);
   };
 
-  useEffect(()=>{
-    setCurrPage(1)
-  },[columns.length])
+  useEffect(() => {
+    setCurrPage(1);
+  }, [columns.length]);
 
   const renderPagination = () => {
     let pages = [];

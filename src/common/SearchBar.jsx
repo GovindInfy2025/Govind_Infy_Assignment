@@ -1,4 +1,4 @@
-import React, { act, useEffect, useState,memo } from "react";
+import React, { act, useEffect, useState, memo } from "react";
 
 const SearchBar = (props) => {
   const { setCopyData, orgData, activeTab } = props;
@@ -35,7 +35,7 @@ const SearchBar = (props) => {
   return (
     <input
       type="search"
-      placeholder={"Search "+placeHolder}
+      placeholder={"Search " + placeHolder}
       value={searchStr}
       onChange={(e) => setSearchStr(e.target.value.trim())}
     />

@@ -1,10 +1,11 @@
-import React, { useState, useEffect, createContext,memo } from "react";
+import React, { useState, useEffect, createContext, memo } from "react";
 import HeaderTabs from "../components/HeaderTabs";
 import CustomerTables from "../components/CustomerTables";
 import rewardCalcualtor from "../utilities/rewardCalculator";
 import { monthlyCalculator, totalRewardCal } from "../utilities/sumCalculator";
 import Loader from "../common/Loader";
 import { fetchCustomerData } from "../utilities/services/customerApi";
+import Logger from "../utilities/logger";
 
 export const customerContext = createContext();
 
@@ -28,6 +29,7 @@ const LandingPage = () => {
         const res = await fetchCustomerData();
         setData(rewardCalcualtor(res));
       } catch (err) {
+        Logger.error(err);
         setError(
           "Please contact support, API call is failng to fetch the data"
         );
@@ -46,13 +48,10 @@ const LandingPage = () => {
         value={{ activeTab, handleTabChange, data, monthlyData, totalData }}
       >
         <HeaderTabs />
-        {activeTab === "total_rew" && (
-          <p
-            style={{ margin: "auto", width: "fit-content", paddingTop: "10px" }}
-          >
-            <b>Info</b>: We are accumulating only last three months data from current date
-          </p>
-        )}
+        <p style={{ margin: "auto", width: "fit-content", paddingTop: "10px" }}>
+          <b>Info</b>: We are accumulating only last three months data from
+          current date
+        </p>
         {error ? (
           <div className="errorMsg">{error}</div>
         ) : data.length > 0 ? (

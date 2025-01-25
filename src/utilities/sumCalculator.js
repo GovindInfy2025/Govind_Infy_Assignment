@@ -45,12 +45,7 @@ export const totalRewardCal = (data) => {
     if (!acc[key]) {
       acc[key] = 0;
     }
-    // To consider only last 3 months records
-    if (
-      new Date(obj.purchase_date) >=
-      new Date(new Date().setMonth(new Date().getMonth() - 3))
-    )
-      acc[key] += obj.Rewards;
+    acc[key] += obj.Rewards;
     return acc;
   }, {});
   let totalArr = [];
