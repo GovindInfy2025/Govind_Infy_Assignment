@@ -26,14 +26,12 @@ export const monthlyCalculator = (data) => {
     "Nov",
     "Dec",
   ];
-  let index = 0;
   let monthObj = {};
   for (const item in grpData) {
     let val = item.split("-");
     val.map((k, i) => (monthObj = { ...monthObj, [col[i]]: val[i] }));
     monthObj["Monthly Rewards"] = grpData[item];
     monthObj["Month"] = months[monthObj["Month"] - 1];
-    index += 1;
     monthArr.push(monthObj);
   }
   return monthArr;
