@@ -46,10 +46,12 @@ const Table = (props) => {
               <tr>
                 {columns.map((col, i) => (
                   <th key={i} id={col}>
-                    {col
-                      .split("_")
-                      .map((a) => a.charAt(0).toUpperCase() + a.slice(1))
-                      .join(" ")}
+                    {col === "price"
+                      ? "Price (in Dollars)"
+                      : col
+                          .split("_")
+                          .map((a) => a.charAt(0).toUpperCase() + a.slice(1))
+                          .join(" ")}
                   </th>
                 ))}
               </tr>
@@ -59,7 +61,14 @@ const Table = (props) => {
                 {currentData.map((item, i) => (
                   <tr key={i}>
                     {columns.map((col) => (
-                      <td key={col + i}>{item[col]}</td>
+                      <td
+                        key={col + i}
+                        style={{
+                          textAlign: isNaN(item[col]) ? "center" : "right",
+                        }}
+                      >
+                        {item[col]}
+                      </td>
                     ))}
                   </tr>
                 ))}

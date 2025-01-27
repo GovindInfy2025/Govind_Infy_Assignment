@@ -17,6 +17,7 @@ const rewardCalculator = (data) => {
       if (price >= 50 && price <= 100) points = points + 1 * (price - 50);
       return {
         ...cust,
+        price:cust.price.toFixed(2),
         Rewards: points,
       };
     });
